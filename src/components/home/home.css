@@ -1,0 +1,13 @@
+.carousel-inner {
+  animation: move 15s linear infinite;
+}
+
+.carousel .reverse {
+  animation-direction: reverse;
+}
+
+@keyframes move {
+  to {
+    transform: translate(calc(-50% - 0.5em));
+  }
+}

@@ -11,6 +11,22 @@
   font-family: "Montserrat", sans-serif;
 }
 
+*::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+  padding: 0;
+  margin: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  height: 7px;
+  width: 7px;
+  padding: 0;
+  margin: 0;
+  background: #11182790;
+  border-radius: 5px;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
