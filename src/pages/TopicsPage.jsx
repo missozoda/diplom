@@ -1,3 +1,9 @@
 export default function TopicsPage() {
-  return <div className="bg-[#79B952] h-[80vh]">TopicsPage</div>;
+  return (
+    <div className="container">
+      <h2 className="text-xl md:text-2xl font-bold leading-7 text-gray-900 uppercase text-center">
+        TopicsPage
+      </h2>
+    </div>
+  );
 }
