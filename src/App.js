@@ -1,5 +1,6 @@
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/layouts/Navbar";
+import Footer from "./components/layouts/Footer";
 import HomePage from "./pages/HomePage";
 import TopicsPage from "./pages/TopicsPage";
 import GamesPage from "./pages/GamesPage";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/authors" element={<AuthorsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        <Footer />
       </HashRouter>
     </div>
   );

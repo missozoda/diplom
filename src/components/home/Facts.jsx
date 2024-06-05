@@ -36,7 +36,7 @@ export default function Facts() {
         </div>
         <img className="absolute right-0 -top-56" src={bgTop} />
         <div
-          className="w-full flex items-center justify-between gap-x-16 py-14"
+          className="w-full flex items-center justify-between gap-x-16 py-20"
           ref={factsRef}
         >
           <div className="img-wrapper relative">
@@ -73,7 +73,7 @@ export default function Facts() {
             </p>
           </div>
         </div>
-        <div className="w-full flex items-center justify-between gap-x-16 py-14">
+        <div className="w-full flex items-center justify-between gap-x-16 py-20">
           <div className="max-w-[700px] text-right">
             <h3 className="mb-8 text-3xl font-bold leading-7 text-[#79B952]">
               Sutemizuvchilar
@@ -109,7 +109,7 @@ export default function Facts() {
           </div>
         </div>
         <img className="absolute -left-16 top-[20%]" src={bgLeft} />
-        <div className="w-full flex items-center justify-between gap-x-16 py-14">
+        <div className="w-full flex items-center justify-between gap-x-16 py-20">
           <div className="img-wrapper relative">
             <img
               className="w-[400px] rounded-s-[36px] rounded-t-[36px]"
