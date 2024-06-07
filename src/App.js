@@ -4,6 +4,8 @@ import Footer from "./components/layouts/Footer";
 import HomePage from "./pages/HomePage";
 import TopicsPage from "./pages/TopicsPage";
 import GamesPage from "./pages/GamesPage";
+import TwinPage from "./pages/TwinPage";
+import WordsPage from "./pages/WordsPage";
 import AboutPage from "./pages/AboutPage";
 import AuthorsPage from "./pages/AuthorsPage";
 function App() {
@@ -16,6 +18,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/topics" element={<TopicsPage />} />
           <Route path="/games" element={<GamesPage />} />
+          <Route path="/twin" element={<TwinPage />} />
+          <Route path="/words" element={<WordsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/authors" element={<AuthorsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />

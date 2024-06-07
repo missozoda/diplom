@@ -1,15 +1,27 @@
+import { NavLink } from "react-router-dom";
+import twin from "../assets/twin.gif";
+import words from "../assets/words.gif";
 export default function GamesPage() {
   return (
-    <div className="container overflow-hidden py-10">
-      <h2 className="mb-16 text-3xl font-bold text-gray-900 leading-8 text-center">
-        Berilgan rasmlardan qushlarni va ayna shu qushning tuxumini mosini
-        topishingiz kerak.
-      </h2>
-      <embed
-        src="https://biologiya-diplom.vercel.app/games/"
-        // src="http://localhost:3000/games/"
-        className="w-full h-[80vh] overflow-hidden"
-      />
+    <div className="container overflow-hidden py-20 h-full">
+      <div className="flex items-center justify-between gap-x-16">
+        <div>
+          <h4 className="mb-4 text-2xl font-semibold leading-8 text-gray-900 text-center">
+            Rasmlarda qushlarni va ayna shu qushning tuxumini topish o'yini.
+          </h4>
+          <NavLink to={"/twin"}>
+            <img src={twin} />
+          </NavLink>
+        </div>
+        <div>
+          <h4 className="mb-4 text-2xl font-semibold leading-8 text-gray-900 text-center">
+            Berilgan tarifga mos keladigan so'zni topish o'yini.
+          </h4>
+          <NavLink to={"/words"}>
+            <img src={words} />
+          </NavLink>
+        </div>
+      </div>
     </div>
   );
 }
