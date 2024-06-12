@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg">
+  <title>BIOLOGIYA</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+<style>
+  .flex-box-2 {
+  display:flex;
+  justify-content:space-between;
+  background-color: aquamarine;
+  padding: 15px;
+  margin: 5px;
+  float: right;
+}
+button.button1{
+    height:100px;
+    width:100px;
+    font: 1em sans-serif;
+    float: left;
+  }
+</style>
+</head>
+<body class="sub_page">
+  <div class="common_style">
+    <section class="admission_section">
+      <div class="container">
+        <button class="btn btn-success mt-4 pr-3" onclick="history.back()"> <- Ortga</button>
+          <div class="row ">
+            <h1 class="col text-center">
+             Rasmda tasvirlangan hayvonga tegishli tushunchalarni to‘g‘ri deb qabul qilishingiz yoki noto‘g‘ri deb inkor etishingiz mumkin.  Berilgan har bir to‘g‘ri  fikrga  “ha”, noto‘g‘ri fikrga “yo‘q” deb javob bering. </h1>
+          </div>
+          <div class="row">
+            <div id="nerv1" class="col-6" ><img src="topshiriq/topshiriq17.jpg"></div>
+        <div class="col-6" >
+              <div class="flex-box-2 " id="btn1">
+                <h1> Chap va o‘ng bo‘lmachali  yurak</h1>
+                <button class="btn btn-primary m-1"
+                style="height:60px;width:100px; font: 1em sans-serif; float: left;" value="yes" id="one1">
+                HA </button>
+              <button class="btn btn-primary m-1"
+              style="height:60px;width:100px; font: 1em sans-serif; float: left;" value="no" id="one2">
+              YO’Q </button>
+              </div>
+              <div class="flex-box-2" id="btn2">
+                <h1> Metamorfoz bilan rivojlanish</h1>
+                <button class="btn btn-primary m-1"
+                style="height:60px;width:100px; font: 1em sans-serif; float: left;" id="two1">HA </button>
+              <button class="btn btn-primary m-1"
+                style="height:60px;width:100px; font: 1em sans-serif; float: left;" id="two2"> YO’Q </button>
+              </div>
+              <div class="flex-box-2" id="btn3">
+                <h1> Og'iz bo'shligida tishlar mavjud</h1>
+                <button class="btn btn-primary m-1"
+                style="height:60px;width:100px; font: 1em sans-serif; float: left;" id="thre1">HA </button>
+              <button class="btn btn-primary m-1"
+                style="height:60px;width:100px; font: 1em sans-serif; float: left;" id="thre2"> YO’Q </button>
+              </div>
+              <div class="flex-box-2" id="btn4">
+                <h1> Bosh miya katta yarim sharlari</h1>
+                <button class="btn btn-primary m-1"
+                style="height:60px;width:100px; font: 1em sans-serif; float: left;" id="four1">HA </button>
+              <button class="btn btn-primary m-1"
+                style="height:60px;width:100px; font: 1em sans-serif; float: left;" id="four2"> YO’Q </button>
+              </div>
+        </div>
+      </div>
+</section>
+  </div>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript">
+    let workingcheck=(bgcolor, color)=>{
+      let msg = document.querySelector("#btn1");
+      msg.style.backgroundColor=bgcolor;
+      msg.style.color=color;
+    }
+    let qfist1=document.querySelector("#one1");
+    qfist1.addEventListener('click',function(){
+      workingcheck('green','white');
+      document.getElementById('one1').disabled=true;
+      document.getElementById('one1').style.color="green";
+      document.getElementById('one1').style.backgroundColor="yellow";
+      document.getElementById('one1').style.fontSize="24px";
+      document.getElementById('one1').style.fontWeight="900";
+      document.getElementById('one2').disabled=true;
+    });
+    let qfist2=document.querySelector("#one2");
+    qfist2.addEventListener('click',function(){
+      workingcheck('red','white');
+      document.getElementById('one1').disabled=true;
+     document.getElementById('one2').disabled=true;
+      document.getElementById('one2').style.color="red";
+      document.getElementById('one2').style.backgroundColor="yellow";
+      document.getElementById('one2').style.fontSize="24px";
+      document.getElementById('one2').style.fontWeight="900";
+    });
+    let workingcheck2=(bgcolor, color)=>{
+      let msg = document.querySelector("#btn2");
+      msg.style.backgroundColor=bgcolor;
+      msg.style.color=color;
+    }
+    let sec1=document.querySelector("#two1");
+    sec1.addEventListener('click',function(){
+      workingcheck2('red','white');
+      document.getElementById('two1').disabled=true;
+      document.getElementById('two1').style.color="red";
+      document.getElementById('two1').style.backgroundColor="yellow";
+      document.getElementById('two1').style.fontSize="24px";
+      document.getElementById('two1').style.fontWeight="900";
+      document.getElementById('two2').disabled=true;
+    });
+    let sec2=document.querySelector("#two2");
+    sec2.addEventListener('click',function(){
+      workingcheck2('green','white');
+      document.getElementById('two1').disabled=true;
+      document.getElementById('two2').disabled=true;
+      document.getElementById('two2').style.color="green";
+      document.getElementById('two2').style.backgroundColor="yellow";
+      document.getElementById('two2').style.fontSize="24px";
+      document.getElementById('two2').style.fontWeight="900";
+    });
+    let workingcheck3=(bgcolor, color)=>{
+      let msg = document.querySelector("#btn3");
+      msg.style.backgroundColor=bgcolor;
+      msg.style.color=color;
+    }
+    let three1=document.querySelector("#thre1");
+    three1.addEventListener('click',function(){
+      workingcheck3('red','white');
+      document.getElementById('thre1').disabled=true;
+      document.getElementById('thre1').style.color="red";
+      document.getElementById('thre1').style.backgroundColor="yellow";
+      document.getElementById('thre1').style.fontSize="24px";
+      document.getElementById('thre1').style.fontWeight="900";
+      document.getElementById('thre2').disabled=true;
+    });
+    let three2=document.querySelector("#thre2");
+    three2.addEventListener('click',function(){
+      workingcheck3('green','white');
+      document.getElementById('thre1').disabled=true;
+      document.getElementById('thre2').disabled=true;
+      document.getElementById('thre2').style.color="green";
+      document.getElementById('thre2').style.backgroundColor="yellow";
+      document.getElementById('thre2').style.fontSize="24px";
+      document.getElementById('thre2').style.fontWeight="900";
+    });
+    let workingcheck4=(bgcolor, color)=>{
+      let msg = document.querySelector("#btn4");
+      msg.style.backgroundColor=bgcolor;
+      msg.style.color=color;
+    }
+    let qfour1=document.querySelector("#four1");
+    qfour1.addEventListener('click',function(){
+      workingcheck4('green','white');
+      document.getElementById('four1').disabled=true;
+      document.getElementById('four1').style.color="green";
+      document.getElementById('four1').style.backgroundColor="yellow";
+      document.getElementById('four1').style.fontSize="24px";
+      document.getElementById('four1').style.fontWeight="900";
+      document.getElementById('four2').disabled=true;
+    });
+    let qfour2=document.querySelector("#four2");
+    qfour2.addEventListener('click',function(){
+      workingcheck4('red','white');
+      document.getElementById('four1').disabled=true;
+      document.getElementById('four2').disabled=true;
+      document.getElementById('four2').style.color="red";
+      document.getElementById('four2').style.backgroundColor="yellow";
+      document.getElementById('four2').style.fontSize="24px";
+      document.getElementById('four2').style.fontWeight="900";
+    });
+  </script>
+</body>
+</html>

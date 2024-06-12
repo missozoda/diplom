@@ -1,9 +1,11 @@
 export default function TopicsPage() {
   return (
-    <div className="container">
-      <h2 className="text-xl md:text-2xl font-bold leading-7 text-gray-900 uppercase text-center">
-        TopicsPage
-      </h2>
+    <div className="container overflow-hidden py-10">
+      <embed
+        // src="https://biologiya-diplom.vercel.app/topics/"
+        src="http://localhost:3000/topics/"
+        className="w-full min-h-[80vh] h-full overflow-hidden"
+      />
     </div>
   );
 }

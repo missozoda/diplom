@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg">
+  <title>BIOLOGIYA</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+<style>
+  .text1{
+    width: auto;
+     border: 3px solid darkblue;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    display: block;
+    float: left;
+  }
+  .text2{
+    width: auto;
+    height: 40px;
+     border: 3px solid darkblue;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    display: block;
+  }
+</style>
+</head>
+<body class="sub_page">
+  <div class="common_style">
+    <section class="admission_section">
+      <div class="container">
+        <button class="btn btn-success mt-4 pr-3" onclick="history.back()"> <- Ortga</button>
+          <div class="row ">
+            <h1 class="col text-center">
+          Berilgan har bir rasmga   o'ng tamonidagi tugmalardan mosini tanlang.
+            </h1>
+          </div>
+          <div class="row text-center">
+            <div class="col-6" ><h2>Tiriklik organizm xususiyatlari </h2></div>
+            <div class="col-6"><h2>Jarayon nomi</h2></div>
+          </div>
+    <div class="row">
+      <div class="col-6 mb-2 ">
+                <div id="nerv1" ><img src="topshiriq/jarayon1.jpg"></div>
+      </div>
+      <div class="col-6">
+            <button  class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;" value="correct">Oziqlanish </button>
+            <button  class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;" value="incorrect">Ko’payish </button>
+            <button  class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;" value="incorrect">Nafas olish </button>
+            <button  class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;" value="incorrect">Harakatlanish </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 mb-2">
+              <div id="nerv1" ><img src="topshiriq/jarayon2.jpg"></div>
+      </div>
+      <div class="col-6">
+        <button value="incorrect" class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;">Oziqlanish </button>
+        <button value="correct" class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;">Ko’payish </button>
+        <button value="incorrect"  class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;">Nafas olish </button>
+        <button  value="incorrect"  class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;">Harakatlanish </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 mb-2">
+          <div id="nerv1" ><img src="topshiriq/jarayon3.jpg"></div>
+      </div>
+      <div class="col-6">
+        <button  value="incorrect"   class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;">Oziqlanish </button>
+            <button  value="incorrect"   class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;">Ko’payish </button>
+            <button   value="correct"  class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;">Nafas olish </button>
+            <button  value="incorrect"   class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;">Harakatlanish </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 ">
+          <div id="nerv1" ><img src="topshiriq/jarayon4.jpg"></div>
+      </div>
+      <div class="col-6">
+        <button   value="incorrect"  class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;">Oziqlanish </button>
+            <button   value="incorrect"  class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;">Ko’payish </button>
+            <button   value="incorrect"  class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;">Nafas olish </button>
+            <button   value="correct"  class="btn btn-primary m-1" style="height:100px;width:220px; font: 2em sans-serif;">Harakatlanish </button>
+      </div>
+    </div>
+      </div>
+</section>
+  </div>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" >
+      let buttons = document.querySelectorAll('button');
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function() {
+          if(buttons[i].value=='correct'){
+            buttons[i].classList.toggle('btn-success');
+            buttons[i].disabled=true;
+            alert('To`g`ri topdingiz !');
+          }
+          else{
+            buttons[i].classList.toggle('btn-danger');
+            buttons[i].disabled=true
+          }
+        });
+}
+  </script>
+</body>
+</html>

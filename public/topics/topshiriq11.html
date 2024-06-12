@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg" />
+    <title>BIOLOGIYA</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css" />
+    <style>
+      .text {
+        width: 200px;
+        cursor: pointer;
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="sub_page">
+    <div class="common_style">
+      <section class="admission_section">
+        <div class="container">
+          <button class="btn btn-success mt-4 pr-3" onclick="history.back()">
+            <- Ortga
+          </button>
+          <div class="row">
+            <h1 class="col text-center">
+              Fotosintez va nafas olish jarayonlarining o’zaro bog’liqligini aks
+              ettiruvchi rasmni tushirib qoldirilgan
+              <strong>Suv, CO2, O2 , Quyosh </strong> so’zlarini rasmdagi
+              raqamlarga mos holatda yozib chiqing
+            </h1>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="topshiriq/osimlik_nafas_ol.jpg" alt="" />
+            </div>
+            <div class="col-md-6">
+              <div class="input-group input-group-lg m-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-lg1"
+                    >1</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Large"
+                  aria-describedby="inputGroup-sizing-sm"
+                  id="input1"
+                />
+              </div>
+              <div class="input-group input-group-lg m-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-lg2"
+                    >2</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Large"
+                  aria-describedby="inputGroup-sizing-sm"
+                  id="input2"
+                />
+              </div>
+              <div class="input-group input-group-lg m-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-lg3"
+                    >3</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Large"
+                  aria-describedby="inputGroup-sizing-sm"
+                  id="input3"
+                />
+              </div>
+              <div class="input-group input-group-lg m-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-lg4"
+                    >4</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Large"
+                  aria-describedby="inputGroup-sizing-sm"
+                  id="input4"
+                />
+              </div>
+              <div class="input-group input-group-lg m-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-lg5"
+                    >5</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Large"
+                  aria-describedby="inputGroup-sizing-sm"
+                  id="input5"
+                />
+              </div>
+              <div class="input-group input-group-lg m-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-lg6"
+                    >6</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Large"
+                  aria-describedby="inputGroup-sizing-sm"
+                  id="input6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button onclick="mousedown()" class="btn btn-success m-4 pr-3 btn-lg">
+          Tekshirish
+        </button>
+      </section>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script>
+      let yes = true;
+      let correct = 0;
+      function mousedown() {
+        let element1 = document
+          .getElementById("input1")
+          .value.toLowerCase()
+          .trim();
+        if (element1 == "quyosh") {
+          correct += 1;
+          document.getElementById("input1").classList.add("btn-success");
+          document.getElementById("input1").disabled = true;
+        } else {
+          document.getElementById("input1").classList.add("btn-danger");
+          document.getElementById("input1").disabled = true;
+        }
+        let element2 = document
+          .getElementById("input2")
+          .value.toLowerCase()
+          .trim();
+        if (element2 == "co2") {
+          correct += 1;
+          document.getElementById("input2").classList.add("btn-success");
+          document.getElementById("input2").disabled = true;
+        } else {
+          document.getElementById("input2").classList.add("btn-danger");
+          document.getElementById("input2").disabled = true;
+        }
+        let element3 = document
+          .getElementById("input3")
+          .value.toLowerCase()
+          .trim();
+        if (element3 == "o2") {
+          correct += 1;
+          document.getElementById("input3").classList.add("btn-success");
+          document.getElementById("input3").disabled = true;
+        } else {
+          document.getElementById("input3").classList.add("btn-danger");
+          document.getElementById("input3").disabled = true;
+        }
+        let element4 = document
+          .getElementById("input4")
+          .value.toLowerCase()
+          .trim();
+        if (element4 == "co2") {
+          correct += 1;
+          document.getElementById("input4").classList.add("btn-success");
+          document.getElementById("input4").disabled = true;
+        } else {
+          document.getElementById("input4").classList.add("btn-danger");
+          document.getElementById("input4").disabled = true;
+        }
+        let element5 = document
+          .getElementById("input5")
+          .value.toLowerCase()
+          .trim();
+        if (element5 == "o2") {
+          correct += 1;
+          document.getElementById("input5").classList.add("btn-success");
+          document.getElementById("input5").disabled = true;
+        } else {
+          document.getElementById("input5").classList.add("btn-danger");
+          document.getElementById("input5").disabled = true;
+        }
+        let element6 = document
+          .getElementById("input6")
+          .value.toLowerCase()
+          .trim();
+        if (element6 == "suv") {
+          correct += 1;
+          document.getElementById("input6").classList.add("btn-success");
+          document.getElementById("input6").disabled = true;
+        } else {
+          document.getElementById("input6").classList.add("btn-danger");
+          document.getElementById("input6").disabled = true;
+        }
+      }
+    </script>
+  </body>
+</html>

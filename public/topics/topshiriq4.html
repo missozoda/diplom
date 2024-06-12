@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" type="image/x-icon" href="logo.jpg" />
+    <title>BIOLOGIYA</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css" />
+    <style type="text/css">
+      body {
+        margin: 20px;
+      }
+      #item1 {
+        top: 150px;
+        left: 900px;
+        background: rgba(66, 91, 239, 0.8);
+      }
+      #item3 {
+        top: 150px;
+        left: 1200px;
+        background: rgba(245, 40, 145, 0.8);
+      }
+      #item4 {
+        top: 150px;
+        left: 610px;
+        background: rgba(11, 158, 191, 0.9);
+      }
+      #item5 {
+        top: 250px;
+        left: 900px;
+        background: rgba(232, 90, 52, 0.9);
+      }
+      #item6 {
+        top: 250px;
+        left: 1200px;
+        background: rgba(252, 244, 17, 0.9);
+      }
+      #item7 {
+        top: 250px;
+        left: 610px;
+        background: rgba(203, 78, 231, 0.9);
+      }
+      #item1,
+      #item2,
+      #item3,
+      #item4,
+      #item5,
+      #item6,
+      #item7 {
+        height: 60px;
+        width: 200px;
+        position: absolute;
+        vertical-align: middle;
+        line-height: 30px;
+        font-weight: 900;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      #item8,
+      #item9,
+      #item10,
+      #item11,
+      #item12,
+      #item13,
+      #item14 {
+        height: 60px;
+        width: 200px;
+        position: absolute;
+        vertical-align: middle;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 900;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      #item8 {
+        top: 350px;
+        left: 610px;
+        background: rgba(202, 125, 17, 0.9);
+      }
+      #item9 {
+        top: 350px;
+        left: 1200px;
+        background: rgba(98, 136, 240, 0.9);
+      }
+      #item11 {
+        top: 350px;
+        left: 900px;
+        background: rgba(205, 81, 182, 0.9);
+      }
+      #item12 {
+        top: 450px;
+        left: 900px;
+        background: rgba(232, 27, 30, 0.9);
+      }
+      #item13 {
+        top: 450px;
+        left: 610px;
+        background: rgba(79, 54, 240, 0.9);
+      }
+      #item14 {
+        top: 450px;
+        left: 1200px;
+        background: rgba(158, 7, 95, 0.9);
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .flex-container > div {
+        background-color: #f5f155;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        text-align: center;
+        line-height: 45px;
+        font-size: 30px;
+        border-radius: 20px;
+      }
+      button {
+        display: block;
+        font-size: 1.1em;
+        width: 200px;
+        text-decoration: none;
+        text-align: center;
+        font: bold 14px arial;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        margin: 20px auto;
+        color: black;
+        background-color: green;
+        border: 2px solid red;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn btn-success mt-4 pr-3" onclick="history.back()">
+      <- Ortga
+    </button>
+    <div class="row">
+      <h1 class="col text-center">
+        O’simliklar sistematikasining asosiy taksonomik guruhlarini sxemada aks
+        ettiring.
+      </h1>
+    </div>
+    <div>
+      <img src="topshiriq/osimliklar.png" />
+    </div>
+    <section class="about_section">
+      <div class="flex-container">
+        <div id="item8">Ra'nodoshlar oilasi</div>
+        <div id="item9">Bug'doydoshlar oilasi</div>
+        <div id="item11">Na'matak</div>
+        <div id="item12">Bug'doy</div>
+        <div id="item13">Oddiy na'matak</div>
+        <div id="item14">Yumshoq bug'doy</div>
+        <div id="item1">O'simliklar dunyosi</div>
+        <div id="item3">Gulli o'simliklar bo'limi</div>
+        <div id="item4">Ikki urug'oallali o'simliklar sinfi</div>
+        <div id="item5">Bir urug'pallali o'simliklar sinfi.</div>
+        <div id="item6">Ra'nogullilar tartini</div>
+        <div id="item7">Bug'boygullilar tartibi</div>
+      </div>
+      <button class="bott" onclick="check_position()" id="mybutton">
+        Tekshirish
+      </button>
+    </section>
+    <script type="text/javascript">
+      function moveElementDoc(id) {
+        const element = document.getElementById(id);
+        let heightEl = element.clientHeight / 2;
+        let widthEl = element.clientWidth / 2;
+        element.addEventListener("mousedown", function () {
+          document.addEventListener("mousemove", movingmouse);
+          function movingmouse(e) {
+            element.style.position = "absolute";
+            element.style.left = e.clientX - heightEl + "px";
+            element.style.top = e.clientY - widthEl + "px";
+          }
+          document.addEventListener("mouseup", function () {
+            document.removeEventListener("mousemove", movingmouse);
+          });
+        });
+      }
+      moveElementDoc("item1");
+      moveElementDoc("item3");
+      moveElementDoc("item4");
+      moveElementDoc("item5");
+      moveElementDoc("item6");
+      moveElementDoc("item7");
+      moveElementDoc("item8");
+      moveElementDoc("item9");
+      moveElementDoc("item11");
+      moveElementDoc("item12");
+      moveElementDoc("item13");
+      moveElementDoc("item14");
+      var count = 0;
+      function check_position() {
+        var item1 = document.getElementById("item1");
+        var rect1 = item1.getBoundingClientRect();
+        var topPosition1 = rect1.top;
+        var item3 = document.getElementById("item3");
+        var rect3 = item3.getBoundingClientRect();
+        var topPosition3 = rect3.top;
+        if (topPosition1 < topPosition3) {
+          document.getElementById("item1").disabled = true;
+          document.getElementById("item1").style.backgroundColor = "green";
+          document.getElementById("item1").style.border = "4px solid red";
+        } else {
+          document.getElementById("item1").disabled = true;
+          document.getElementById("item1").style.backgroundColor = "red";
+          document.getElementById("item1").style.border = "4px solid green";
+        }
+        var item4 = document.getElementById("item4");
+        var rect4 = item4.getBoundingClientRect();
+        var topPosition4 = rect4.top;
+        var item5 = document.getElementById("item5");
+        var rect5 = item5.getBoundingClientRect();
+        var topPosition5 = rect5.top;
+        if (topPosition3 < topPosition4 && topPosition3 < topPosition5) {
+          document.getElementById("item3").disabled = true;
+          document.getElementById("item3").style.backgroundColor = "green";
+          document.getElementById("item3").style.border = "4px solid red";
+          document.getElementById("item4").disabled = true;
+          document.getElementById("item4").style.backgroundColor = "green";
+          document.getElementById("item4").style.border = "4px solid red";
+          document.getElementById("item5").disabled = true;
+          document.getElementById("item5").style.backgroundColor = "green";
+          document.getElementById("item5").style.border = "4px solid red";
+        } else {
+          document.getElementById("item3").disabled = true;
+          document.getElementById("item3").style.backgroundColor = "red";
+          document.getElementById("item3").style.border = "4px solid green";
+          document.getElementById("item4").disabled = true;
+          document.getElementById("item4").style.backgroundColor = "red";
+          document.getElementById("item4").style.border = "4px solid green";
+          document.getElementById("item5").disabled = true;
+          document.getElementById("item5").style.backgroundColor = "red";
+          document.getElementById("item5").style.border = "4px solid green";
+        }
+        var item6 = document.getElementById("item6");
+        var rect6 = item6.getBoundingClientRect();
+        var topPosition6 = rect6.top;
+        var item7 = document.getElementById("item7");
+        var rect7 = item7.getBoundingClientRect();
+        var topPosition7 = rect7.top;
+        if (topPosition5 < topPosition6 && topPosition5 < topPosition7) {
+          document.getElementById("item6").disabled = true;
+          document.getElementById("item6").style.backgroundColor = "green";
+          document.getElementById("item6").style.border = "4px solid red";
+          document.getElementById("item7").disabled = true;
+          document.getElementById("item7").style.backgroundColor = "green";
+          document.getElementById("item7").style.border = "4px solid red";
+        } else {
+          document.getElementById("item6").disabled = true;
+          document.getElementById("item6").style.backgroundColor = "red";
+          document.getElementById("item6").style.border = "4px solid green";
+          document.getElementById("item7").disabled = true;
+          document.getElementById("item7").style.backgroundColor = "red";
+          document.getElementById("item7").style.border = "4px solid green";
+        }
+        var div8 = document.getElementById("item8");
+        var div8rect = div8.getBoundingClientRect();
+        var topPosition8 = div8rect.top;
+        var div9 = document.getElementById("item9");
+        var div9rect = div9.getBoundingClientRect();
+        var topPosition9 = div9rect.top;
+        if (topPosition7 < topPosition8 && topPosition7 < topPosition8) {
+          document.getElementById("item8").disabled = true;
+          document.getElementById("item8").style.backgroundColor = "green";
+          document.getElementById("item8").style.border = "4px solid red";
+          document.getElementById("item9").disabled = true;
+          document.getElementById("item9").style.backgroundColor = "green";
+          document.getElementById("item9").style.border = "4px solid red";
+        } else {
+          document.getElementById("item8").disabled = true;
+          document.getElementById("item8").style.backgroundColor = "red";
+          document.getElementById("item8").style.border = "4px solid green";
+          document.getElementById("item9").disabled = true;
+          document.getElementById("item9").style.backgroundColor = "red";
+          document.getElementById("item9").style.border = "4px solid green";
+        }
+        var div11 = document.getElementById("item11");
+        var div11rect = div11.getBoundingClientRect();
+        var topPosition11 = div11rect.top;
+        var div12 = document.getElementById("item12");
+        var div12rect = div12.getBoundingClientRect();
+        var topPosition12 = div12rect.top;
+        if (topPosition9 < topPosition11 && topPosition9 < topPosition12) {
+          document.getElementById("item11").disabled = true;
+          document.getElementById("item11").style.backgroundColor = "green";
+          document.getElementById("item11").style.border = "4px solid red";
+          document.getElementById("item12").disabled = true;
+          document.getElementById("item12").style.backgroundColor = "green";
+          document.getElementById("item12").style.border = "4px solid red";
+        } else {
+          document.getElementById("item11").disabled = true;
+          document.getElementById("item11").style.backgroundColor = "red";
+          document.getElementById("item11").style.border = "4px solid green";
+          document.getElementById("item12").disabled = true;
+          document.getElementById("item12").style.backgroundColor = "red";
+          document.getElementById("item12").style.border = "4px solid green";
+        }
+        var div13 = document.getElementById("item13");
+        var div13rect = div13.getBoundingClientRect();
+        var topPosition13 = div13rect.top;
+        var div14 = document.getElementById("item14");
+        var div14rect = div14.getBoundingClientRect();
+        var topPosition14 = div14rect.top;
+        if (topPosition11 < topPosition14 && topPosition11 < topPosition13) {
+          document.getElementById("item13").disabled = true;
+          document.getElementById("item13").style.backgroundColor = "green";
+          document.getElementById("item13").style.border = "4px solid red";
+          document.getElementById("item14").disabled = true;
+          document.getElementById("item14").style.backgroundColor = "green";
+          document.getElementById("item14").style.border = "4px solid red";
+        } else {
+          document.getElementById("item13").disabled = true;
+          document.getElementById("item13").style.backgroundColor = "red";
+          document.getElementById("item13").style.border = "4px solid green";
+          document.getElementById("item14").disabled = true;
+          document.getElementById("item14").style.backgroundColor = "red";
+          document.getElementById("item14").style.border = "4px solid green";
+        }
+      }
+    </script>
+  </body>
+</html>

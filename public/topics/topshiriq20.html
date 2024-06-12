@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg">
+  <title>BIOLOGIYA</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+<style>
+  .text1{
+    width: auto;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body class="sub_page">
+  <div class="common_style">
+    <section class="admission_section">
+      <div class="container">
+        <button class="btn btn-success mt-4 pr-3" onclick="history.back()"> <- Ortga</button>
+          <div class="row">
+            <h1 class="col text-center">
+              Hayvonlarning ayirish organlariga xos xususiyatlar o'rtasidagi muvofiqlikni aniqlang.
+            </h1>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+                  <img src="topshiriq/topshiriq20_1.jpg" alt="">
+                  <div class="input-group input-group-lg m-1" id="answ1">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup1">A</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="first">
+                  </div>
+            </div>
+            <div class="col-md-3">
+                  <img src="topshiriq/topshiriq20_2.jpg" alt="">
+                  <div class="input-group input-group-lg m-1" id="answ2">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup2">B</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="second">
+                  </div>
+            </div>
+            <div class="col-md-6" id="matn">
+              <div id="mant9" class="text1">1.	Ayirish sistemasi bir juft tana buyraklardan boshlanadi.</div>
+              <div id="mant10" class="text1">2.	Siydik siydik yo'llari orqali qovuqqa o’tadi.</div>
+              <div id="mant11" class="text1">3.	Siydik siydik yo'llari orqali o'tib, qovuqda to'planadi.</div>
+              <div id="mant1" class="text1">4.	Siydik chiqarish kanali kloakaga ochiladi.</div>
+              <div id="mant2" class="text1">5.	Ayirish sistemasi bir juft chanoq buyraklardan boshlanadi</div>
+              <div id="mant5" class="text1">6.	Siydik maxsus teshik orqali tashqariga ochiladi.</div>
+            </div>
+          </div>
+  <button class="btn btn-success mt-4 pr-3" onclick="checkvalue()" id="btn"> Tekshirish </button>
+</section>
+</div>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script>
+    var f,s;
+    function checkvalue(){
+      f=document.getElementById('first');
+      s=document.getElementById('second');
+      fb=false;
+      sb=false;
+      function sumLetters(str) {
+            let sum = 0;
+            let splitStr = str.split(',');
+            for (let i = 0; i < splitStr.length; i++) {
+                sum += parseInt(splitStr[i])
+            }
+            return sum;
+        };
+        var bsum=sumLetters(f.value);
+      if (bsum==8){
+        fb=true;}
+        if(fb){
+          document.getElementById('answ1').disabled=true;
+            document.getElementById('answ1').classList.add("btn-success");
+          document.getElementById('inputGroup1').disabled=true;
+          document.getElementById('inputGroup1').style.color = 'white';
+          document.getElementById('inputGroup1').style.fontWeight = '900';
+          document.getElementById('inputGroup1').style.backgroundColor = 'green';
+        }
+        else{
+          document.getElementById('inputGroup1').classList.add("btn-danger");
+          document.getElementById('inputGroup1').disabled=true;
+          document.getElementById('inputGroup1').style.color = 'red';
+          document.getElementById('inputGroup1').style.fontWeight = '900';
+          document.getElementById('inputGroup1').style.backgroundColor = 'yellow';
+        }
+var ssum=sumLetters(s.value);
+if (ssum==13){
+        sb=true;
+      }
+      if(sb){
+          document.getElementById('answ2').disabled=true;
+          document.getElementById('answ2').classList.add("btn-success");
+          document.getElementById('inputGroup2').disabled=true;
+          document.getElementById('inputGroup2').style.color = 'white';
+          document.getElementById('inputGroup2').style.fontWeight = '900';
+          document.getElementById('inputGroup2').style.backgroundColor = 'green';
+        }
+        else{
+          document.getElementById('inputGroup2').classList.add("btn-danger");
+          document.getElementById('inputGroup2').disabled=true;
+          document.getElementById('inputGroup2').style.color = 'red';
+          document.getElementById('inputGroup2').style.fontWeight = '900';
+          document.getElementById('inputGroup2').style.backgroundColor = 'yellow';
+        }
+        if (fb&&sb){
+          document.getElementById('matn').style.color = 'green';
+        }
+        else{
+          document.getElementById('matn').style.color = 'red';
+        }
+        document.getElementById('btn').disabled=true;
+}
+  </script>
+</body>
+</html>

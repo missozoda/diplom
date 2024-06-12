@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg">
+  <title>BIOLOGIYA</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+<style>
+  .text1{
+    width: auto;
+     border: 3px solid darkblue;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    display: block;
+  }
+  .text2{
+    width: auto;
+     border: 3px solid darkblue;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    display: block;
+  }
+</style>
+</head>
+<body class="sub_page">
+  <div class="common_style">
+    <section class="admission_section">
+      <div class="container">
+        <button class="btn btn-success mt-4 pr-3" onclick="history.back()"> <- Ortga</button>
+          <div class="row">
+            <h1 class="col text-center">
+             Kolorado qo'ng'izi va chigirtkaning rivojlanish bosqichlarini hamda ularga tegishli bo'lgan rasmlarni to'g'ri ketma-ketlikda joylang. </h1>
+          </div>
+           <div class="row">
+            <div class="col-md-6">
+                  <img src="topshiriq/kolorado.jpg" alt="">
+            </div>
+            <div class="col-md-6">
+              <div class="input-group input-group-lg m-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-lg1">Kolorado qo'ng'izi</span>
+                </div>
+                <input type="number" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" maxlength="1" id="inpu11" >
+                <input type="number" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" maxlength="1" id="inpu12" >
+                <input type="number" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" maxlength="1" id="inpu13" >
+                <input type="number" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" maxlength="1" id="inpu14" >
+              </div>
+              <div class="input-group input-group-lg m-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-lg2">  Chigirtka </span>
+                </div>
+                <input type="number" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"  maxlength="1"  id="inpu21" >
+                <input type="number" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"  maxlength="1" id="inpu22" >
+                <input type="number" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"  maxlength="1" id="inpu23" >
+                <input type="number" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"  maxlength="1" id="inpu24" >
+              </div>
+ </div>
+          </div>
+      </div>
+  <button class="btn btn-success mt-4 pr-3" onclick="checkresult()"> Tekshirish </button>
+</section>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script>
+        $("input[maxlength]").keyup(function() {
+          var maxLen = this.maxLength;
+          var currentLen = this.value.length;
+          if (maxLen === currentLen) {
+              $(this).next().focus();
+          }
+        });
+          function checkresult() {
+            let element11 = document.getElementById("inpu11").value.trim();
+            let element12 = document.getElementById("inpu12").value.trim();
+            let element13 = document.getElementById("inpu13").value.trim();
+            let element14 = document.getElementById("inpu14").value.trim();
+            if (element11==7 ){
+                document.getElementById('inpu11').classList.add("btn-success");
+                document.getElementById('inpu11').disabled=true;
+            } else {
+                document.getElementById('inpu11').classList.add("btn-danger");
+                document.getElementById('inpu11').disabled=true
+            }
+            if (element12==5 ){
+                document.getElementById('inpu12').classList.add("btn-success");
+                document.getElementById('inpu12').disabled=true;
+            } else {
+                document.getElementById('inpu12').classList.add("btn-danger");
+                document.getElementById('inpu12').disabled=true
+            }
+            if (element13==1 ){
+                document.getElementById('inpu13').classList.add("btn-success");
+                document.getElementById('inpu13').disabled=true;
+            } else {
+                document.getElementById('inpu13').classList.add("btn-danger");
+                document.getElementById('inpu13').disabled=true
+            }
+            if (element14==4 ){
+                document.getElementById('inpu14').classList.add("btn-success");
+                document.getElementById('inpu14').disabled=true;
+            } else {
+                document.getElementById('inpu14').classList.add("btn-danger");
+                document.getElementById('inpu14').disabled=true
+            }
+            let element21 = document.getElementById("inpu21").value.trim();
+            let element22 = document.getElementById("inpu22").value.trim();
+            let element23 = document.getElementById("inpu23").value.trim();
+            let element24 = document.getElementById("inpu24").value.trim();
+            if (element21==3 ){
+                document.getElementById('inpu21').classList.add("btn-success");
+                document.getElementById('inpu21').disabled=true;
+            } else {
+                document.getElementById('inpu21').classList.add("btn-danger");
+                document.getElementById('inpu21').disabled=true
+            }
+            if (element22==8 ){
+                document.getElementById('inpu22').classList.add("btn-success");
+                document.getElementById('inpu22').disabled=true;
+            } else {
+                document.getElementById('inpu22').classList.add("btn-danger");
+                document.getElementById('inpu22').disabled=true
+            }
+            if (element23==6 ){
+                document.getElementById('inpu23').classList.add("btn-success");
+                document.getElementById('inpu23').disabled=true;
+            } else {
+                document.getElementById('inpu23').classList.add("btn-danger");
+                document.getElementById('inpu23').disabled=true
+            }
+            if (element24==2 ){
+                document.getElementById('inpu24').classList.add("btn-success");
+                document.getElementById('inpu24').disabled=true;
+            } else {
+                document.getElementById('inpu24').classList.add("btn-danger");
+                document.getElementById('inpu24').disabled=true
+            }
+}
+  </script>
+</body>
+</html>

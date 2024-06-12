@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg" />
+    <title>BIOLOGIYA</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css" />
+    <style type="text/css">
+      body {
+        margin: 20px;
+      }
+      .matn {
+        width: 210px;
+        border-radius: 5px;
+        padding: 3px;
+        margin: 3px;
+        cursor: pointer;
+        display: block;
+        font-weight: 900;
+        text-align: center;
+        color: aliceblue;
+        font-size: 20px;
+      }
+      button {
+        display: block;
+        font-size: 1.1em;
+        width: 200px;
+        text-decoration: none;
+        text-align: center;
+        font: bold 14px arial;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        margin: 20px auto;
+        color: black;
+        background-color: green;
+        border: 2px solid red;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 50px;
+      }
+      img {
+        margin: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn btn-success mt-4 pr-3" onclick="history.back()">
+      <- Ortga
+    </button>
+    <div class="row">
+      <h1 class="col text-center">
+        Oziq zanjirida sebarganing tutgan o‘rnini aniqlang.
+      </h1>
+    </div>
+    <div></div>
+    <section>
+      <div class="row text-center">
+        <div id="nerv1" class="col text-center">
+          <img src="topshiriq/topshiriq16.jpg" />
+        </div>
+      </div>
+      <div class="row">
+        <img src="topshiriq/baqa.png" width="150px" id="baqa" />
+        <img src="topshiriq/ilon.png" width="150px" id="ilon" />
+        <img src="topshiriq/laylak.png" width="150px" id="laylak" />
+        <img src="topshiriq/sebarga.png" width="150px" id="sebarga" />
+        <img src="topshiriq/temirchak.png" width="150px" id="temir" />
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <button class="bott" onclick="check_position()" id="mybutton">
+        Tekshirish
+      </button>
+    </section>
+    <script type="text/javascript">
+      function moveElementDoc(id) {
+        const element = document.getElementById(id);
+        let heightEl = element.clientHeight / 2;
+        let widthEl = element.clientWidth / 2;
+        element.addEventListener("mousedown", function () {
+          document.addEventListener("mousemove", movingmouse);
+          function movingmouse(e) {
+            element.style.position = "absolute";
+            element.style.left = e.clientX - heightEl + "px";
+            element.style.top = e.clientY - widthEl + "px";
+          }
+          document.addEventListener("mouseup", function () {
+            document.removeEventListener("mousemove", movingmouse);
+          });
+        });
+      }
+      moveElementDoc("baqa");
+      moveElementDoc("ilon");
+      moveElementDoc("laylak");
+      moveElementDoc("sebarga");
+      moveElementDoc("temir");
+      var count = 0;
+      function check_position() {
+        var item1 = document.getElementById("sebarga");
+        var rect1 = item1.getBoundingClientRect();
+        var sebargaleft = rect1.left;
+        var item2 = document.getElementById("temir");
+        var rect2 = item2.getBoundingClientRect();
+        var temirleft = rect2.left;
+        var item3 = document.getElementById("baqa");
+        var rect3 = item3.getBoundingClientRect();
+        var baqaleft = rect3.left;
+        var item4 = document.getElementById("ilon");
+        var rect4 = item4.getBoundingClientRect();
+        var ilonleft = rect4.left;
+        var item5 = document.getElementById("laylak");
+        var rect5 = item5.getBoundingClientRect();
+        var laylakleft = rect5.left;
+        var voy =
+          sebargaleft < temirleft &&
+          temirleft < baqaleft &&
+          baqaleft < ilonleft &&
+          ilonleft < laylakleft;
+        if (voy) {
+          document.getElementById("sebarga").disabled = true;
+          document.getElementById("sebarga").style.border = "4px solid green";
+          document.getElementById("temir").disabled = true;
+          document.getElementById("temir").style.border = "4px solid green";
+          document.getElementById("baqa").disabled = true;
+          document.getElementById("baqa").style.border = "4px solid green";
+          document.getElementById("ilon").disabled = true;
+          document.getElementById("ilon").style.border = "4px solid green";
+          document.getElementById("laylak").disabled = true;
+          document.getElementById("laylak").style.border = "4px solid green";
+        } else {
+          document.getElementById("sebarga").disabled = true;
+          document.getElementById("sebarga").style.border = "4px solid red";
+          document.getElementById("temir").disabled = true;
+          document.getElementById("temir").style.border = "4px solid red";
+          document.getElementById("baqa").disabled = true;
+          document.getElementById("baqa").style.border = "4px solid red";
+          document.getElementById("ilon").disabled = true;
+          document.getElementById("ilon").style.border = "4px solid red";
+          document.getElementById("laylak").disabled = true;
+          document.getElementById("laylak").style.border = "4px solid red";
+        }
+      }
+    </script>
+  </body>
+</html>

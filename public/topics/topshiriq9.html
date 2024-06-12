@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg" />
+    <title>BIOLOGIYA</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css" />
+    <style type="text/css">
+      body {
+        margin: 20px;
+      }
+      .matn {
+        width: 210px;
+        border-radius: 5px;
+        padding: 3px;
+        margin: 3px;
+        cursor: pointer;
+        display: block;
+        font-weight: 900;
+        text-align: center;
+        color: aliceblue;
+        font-size: 20px;
+      }
+      button {
+        display: block;
+        font-size: 1.1em;
+        width: 200px;
+        text-decoration: none;
+        text-align: center;
+        font: bold 14px arial;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        margin: 20px auto;
+        color: black;
+        background-color: green;
+        border: 2px solid red;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 50px;
+      }
+      img {
+        margin: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn btn-success mt-4 pr-3" onclick="history.back()">
+      <- Ortga
+    </button>
+    <div class="row">
+      <h1 class="col text-center">
+        Ozuqa zanjiri ketma-ketligini to'g'ri tuzing.
+      </h1>
+    </div>
+    <div></div>
+    <section>
+      <div class="row">
+        <div class="col text-center">
+          <img src="topshiriq/zanjr.jpg" />
+        </div>
+      </div>
+      <div class="row">
+        <div id="yojik" class="m-1"><img src="topshiriq/yojik.png" /></div>
+        <div id="tulki" class="m-1"><img src="topshiriq/tulki.png" /></div>
+        <div id="quyon" class="m-1"><img src="topshiriq/quyon.png" /></div>
+        <div id="qurt" class="m-1"><img src="topshiriq/qurt.png" /></div>
+        <div id="karam" class="m-1"><img src="topshiriq/karam.png" /></div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <button class="bott" onclick="check_position()" id="mybutton">
+        Tekshirish
+      </button>
+    </section>
+    <script type="text/javascript">
+      function moveElementDoc(id) {
+        const element = document.getElementById(id);
+        let heightEl = element.clientHeight / 2;
+        let widthEl = element.clientWidth / 2;
+        element.addEventListener("mousedown", function () {
+          document.addEventListener("mousemove", movingmouse);
+          function movingmouse(e) {
+            element.style.position = "absolute";
+            element.style.left = e.clientX - heightEl + "px";
+            element.style.top = e.clientY - widthEl + "px";
+          }
+          document.addEventListener("mouseup", function () {
+            document.removeEventListener("mousemove", movingmouse);
+          });
+        });
+      }
+      moveElementDoc("yojik");
+      moveElementDoc("karam");
+      moveElementDoc("qurt");
+      moveElementDoc("tulki");
+      moveElementDoc("quyon");
+      var count = 0;
+      function check_position() {
+        var item1 = document.getElementById("yojik");
+        var rect1 = item1.getBoundingClientRect();
+        var yojikleft = rect1.left;
+        var voyatop = rect1.top;
+        var item2 = document.getElementById("karam");
+        var rect2 = item2.getBoundingClientRect();
+        var karamleft = rect2.left;
+        var toliqtop = rect2.top;
+        var item3 = document.getElementById("qurt");
+        var rect3 = item3.getBoundingClientRect();
+        var qurtleft = rect3.left;
+        var togritop = rect3.top;
+        var item4 = document.getElementById("tulki");
+        var rect4 = item4.getBoundingClientRect();
+        var tulkileft = rect4.left;
+        var chalatop = rect4.top;
+        var item5 = document.getElementById("quyon");
+        var rect5 = item5.getBoundingClientRect();
+        var quyonleft = rect5.left;
+        var keksatop = rect5.top;
+        var voy =
+          karamleft < qurtleft &&
+          qurtleft < yojikleft &&
+          yojikleft < quyonleft &&
+          quyonleft < tulkileft;
+        if (voy) {
+          document.getElementById("karam").disabled = true;
+          document.getElementById("karam").style.border = "4px solid green";
+          document.getElementById("qurt").disabled = true;
+          document.getElementById("qurt").style.border = "4px solid green";
+          document.getElementById("yojik").disabled = true;
+          document.getElementById("yojik").style.border = "4px solid green";
+          document.getElementById("quyon").disabled = true;
+          document.getElementById("quyon").style.border = "4px solid green";
+          document.getElementById("tulki").disabled = true;
+          document.getElementById("tulki").style.border = "4px solid green";
+        } else {
+          document.getElementById("karam").disabled = true;
+          document.getElementById("karam").style.border = "4px solid red";
+          document.getElementById("qurt").disabled = true;
+          document.getElementById("qurt").style.border = "4px solid red";
+          document.getElementById("yojik").disabled = true;
+          document.getElementById("yojik").style.border = "4px solid red";
+          document.getElementById("quyon").disabled = true;
+          document.getElementById("quyon").style.border = "4px solid red";
+          document.getElementById("tulki").disabled = true;
+          document.getElementById("tulki").style.border = "4px solid red";
+          document.getElementById("voya").disabled = true;
+        }
+        document.getElementById("mybutton").disabled = true;
+      }
+    </script>
+  </body>
+</html>

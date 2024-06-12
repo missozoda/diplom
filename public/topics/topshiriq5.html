@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg" />
+    <title>BIOLOGIYA</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css" />
+    <style>
+      .quiz-box {
+        background-color: rgb(196, 238, 125);
+        border-radius: 10px;
+        box-shadow: 0 0 10px 2px rgba(240, 47, 47, 0.1);
+        width: 700px;
+        overflow: hidden;
+      }
+      .quiz-header {
+        padding: 64px;
+      }
+      .quiz-header ul {
+        list-style: none;
+        padding: 0;
+      }
+      .quiz-header ul li {
+        font-size: 24px;
+        margin: 15px 0;
+      }
+      .quiz-header ul li label {
+        cursor: pointer;
+      }
+      button {
+        background-color: #67b37a;
+        border: none;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #f6f1f1;
+        padding: 15px;
+        transition: all 0.5s ease;
+      }
+      button:hover {
+        background-color: #19a20c;
+      }
+      button:focus {
+        outline: none;
+        background-color: #0e6545;
+      }
+    </style>
+  </head>
+  <body class="sub_page">
+    <div class="common_style">
+      <section class="admission_section">
+        <div class="container">
+          <button
+            style="width: 150px"
+            class="btn btn-success mt-4 pr-3"
+            onclick="history.back()"
+          >
+            <- Ortga
+          </button>
+          <div class="row">
+            <h1 class="col text-center">
+              To'qima turlari va ularning funksiyalari o'rtasidagi muvofiqlikni
+              aniqlang
+            </h1>
+          </div>
+          <div class="row ml-4">
+            <div class="quiz-box" id="quiz">
+              <div class="quiz-header">
+                <h2 id="question">Question text</h2>
+                <ul>
+                  <li>
+                    <input type="radio" name="answer" id="a" class="answer" />
+                    <label for="a" id="a_text">Question</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="answer" id="b" class="answer" />
+                    <label for="b" id="b_text">Question</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="answer" id="c" class="answer" />
+                    <label for="c" id="c_text">Question</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="answer" id="d" class="answer" />
+                    <label for="d" id="d_text">Question</label>
+                  </li>
+                </ul>
+              </div>
+              <button id="submit">Yuborish</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+      const quizData = [
+        {
+          question:
+            "O'simlik organlariga mustahkamlik (tayanch) beruvchi to'qima ?",
+          a: "Biriktiruvchi to'qima",
+          b: "Mexanik to'qima",
+          c: "Muskul to'qima",
+          d: "Qoplovchi to'qima",
+          correct: "b",
+        },
+        {
+          question: "Fotosintezni amalga oshiradi ?",
+          a: "Ajratuvchi to'qima",
+          b: "O'tkazuvchi to'qima",
+          c: "Epiteiiy to'qima",
+          d: "Asosiy to'qima",
+          correct: "d",
+        },
+        {
+          question: "Organlarni o'zaro bog'laydi ?",
+          a: "Biriktiruvchi to'qima",
+          b: "Mexanik to'qima",
+          c: "Muskul to'qima",
+          d: "Qoplovchi to'qima",
+          correct: "a",
+        },
+        {
+          question: "Ta'sirlarni qabul qiladi ?",
+          a: "Asosiy to'qima",
+          b: "Hosil qiluvchi to'qima",
+          c: "Qoplovchi to'qima",
+          d: "Nerv to'qima",
+          correct: "d",
+        },
+        {
+          question: "Qisqarish xususiyatiga ega ?",
+          a: "Biriktiruvchi to'qima",
+          b: "Mexanik to'qima",
+          c: "Muskul to'qima",
+          d: "Qoplovchi to'qima",
+          correct: "c",
+        },
+        {
+          question: "O'simlik tanasida moddalar transportini ta'minlaydi ?",
+          a: "Ajratuvchi to'qima",
+          b: "O'tkazuvchi to'qima",
+          c: "Epiteiiy to'qima",
+          d: "Asosiy to'qima",
+          correct: "b",
+        },
+        {
+          question:
+            "Gullarning changlanshi, mevalarning tarqalishi uchun xizmat qiladi ?",
+          a: "Ajratuvchi to'qima",
+          b: "O'tkazuvchi to'qima",
+          c: "Epiteiiy to'qima",
+          d: "Asosiy to'qima",
+          correct: "a",
+        },
+        {
+          question: "O'simlikni yuqori haroratdan himoya qiladi ?",
+          a: "Biriktiruvchi to'qima",
+          b: "Mexanik to'qima",
+          c: "Muskul to'qima",
+          d: "Qoplovchi to'qima",
+          correct: "d",
+        },
+        {
+          question: "Fotosintez qilish xususiyatiga ega ?",
+          a: "Nerv to'qima",
+          b: "Hosil qiluvchi to'qima",
+          c: "Qoplovchi to'qima",
+          d: "Asosiy to'qima",
+          correct: "b",
+        },
+        {
+          question: "Organizmni tashqi ta’siriardan himoya qiladi ?",
+          a: "Ajratuvchi to'qima",
+          b: "O'tkazuvchi to'qima",
+          c: "Epiteiiy to'qima",
+          d: "Asosiy to'qima",
+          correct: "c",
+        },
+      ];
+      const quiz = document.getElementById("quiz");
+      const answerElements = document.querySelectorAll(".answer");
+      const questionElement = document.getElementById("question");
+      const a_text = document.getElementById("a_text");
+      const b_text = document.getElementById("b_text");
+      const c_text = document.getElementById("c_text");
+      const d_text = document.getElementById("d_text");
+      const submit = document.getElementById("submit");
+      let currentQuiz = 0;
+      let score = 0;
+      loadQuiz();
+      function loadQuiz() {
+        deselectAnswers();
+        const currentQuizData = quizData[currentQuiz];
+        questionElement.innerText = currentQuizData.question;
+        a_text.innerText = currentQuizData.a;
+        b_text.innerText = currentQuizData.b;
+        c_text.innerText = currentQuizData.c;
+        d_text.innerText = currentQuizData.d;
+      }
+      function deselectAnswers() {
+        answerElements.forEach((answerEl) => (answerEl.checked = false));
+      }
+      function getSelected() {
+        let answer;
+        answerElements.forEach((answerEl) => {
+          if (answerEl.checked) {
+            answer = answerEl.id;
+          }
+        });
+        return answer;
+      }
+      submit.addEventListener("click", () => {
+        const answer = getSelected();
+        if (answer) {
+          if (answer === quizData[currentQuiz].correct) {
+            score++;
+          }
+          currentQuiz++;
+          if (currentQuiz < quizData.length) {
+            loadQuiz();
+          } else {
+            quiz.innerHTML = `<h2>Siz ${quizData.length} ta savoldan ${score} tasiga to'g'ri javob berdingiz</h2>
+            <button onclick="location.reload()">Qayta boshlash</button>
+            `;
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
