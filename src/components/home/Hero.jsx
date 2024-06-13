@@ -16,7 +16,7 @@ export default function Hero() {
             Elektron darsliklar faqat bosma darsliklarning raqamli ko'rinishi
             emas. Ular o'rganish uchun yangi imkoniyatlarni ifodalaydi.
           </p>
-          <NavLink to={"/about"}>
+          <NavLink to="/about">
             <button className="bg-transparent text-[#ffffff] border-2 border-white hover:bg-[#ffffff] hover:text-[#79B952] font-medium py-2 md:py-3 px-8 md:px-10 rounded-xl transition-all ease-in-out duration-500 hover:-translate-y-1 text-sm sm:text-base">
               Batafsil ma'lumot
             </button>
