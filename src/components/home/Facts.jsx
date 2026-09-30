@@ -36,7 +36,7 @@ export default function Facts() {
         </div>
         <img
           className="absolute right-0 -top-56 max-sm:hidden"
-          src={bgTop}
+          src={bgTop} alt=""
           width={350}
         />
         <div
@@ -46,11 +46,11 @@ export default function Facts() {
           <div className="img-wrapper relative">
             <img
               className="w-auto min-w-[150px] sm:min-w-[200px] md:min-w-[300px] lg:min-w-[400px] max-[500px]:rounded-[36px] rounded-s-[36px] rounded-t-[36px]"
-              src={meduza}
+              src={meduza} alt="Meduza"
             />
             <img
               className="absolute bottom-0 left-0 right-0 z-20"
-              src={bgImg}
+              src={bgImg} alt=""
             />
             <div className="absolute bottom-0 right-0 w-[140px] lg:w-[190px] h-[140px] lg:h-[190px] rounded-tl-[36px] border-t-4 lg:border-t-8 border-l-4 lg:border-l-8 border-white bg-[#79B952] py-5 lg:py-10 pl-2 lg:pl-5 text-white text-center max-md:hidden">
               <p className="my-2 text-base lg:text-lg">Mavjud turlar</p>
@@ -98,11 +98,11 @@ export default function Facts() {
           <div className="img-wrapper relative">
             <img
               className="w-auto min-w-[150px] sm:min-w-[200px] md:min-w-[300px] lg:min-w-[400px] max-[500px]:rounded-[36px] rounded-e-[36px] rounded-t-[36px]"
-              src={fil}
+              src={fil} alt="Sut emizuvchi"
             />
             <img
               className="absolute bottom-0 left-0 right-0 z-20"
-              src={bgImg}
+              src={bgImg} alt=""
             />
             <div className="absolute bottom-0 left-0 w-[140px] lg:w-[190px] h-[140px] lg:h-[190px] rounded-tr-[36px] border-t-4 lg:border-t-8 border-r-4 lg:border-r-8 border-white bg-[#79B952] py-3 lg:py-6 pl-3 lg:pl-5 text-white max-md:hidden">
               <p className="text-base lg:text-lg">Mavjud turlar</p>
@@ -114,16 +114,16 @@ export default function Facts() {
             </div>
           </div>
         </div>
-        <img className="absolute -left-16 top-[20%]" src={bgLeft} width={400} />
+        <img className="absolute -left-16 top-[20%]" src={bgLeft} alt="" width={400} />
         <div className="w-full flex max-[500px]:flex-wrap items-center justify-between gap-x-3 sm:gap-x-5 md:gap-x-10 xl:gap-x-16 py-10 md:py-16 xl:py-20">
           <div className="img-wrapper relative">
             <img
               className="w-auto min-w-[150px] sm:min-w-[200px] md:min-w-[300px] lg:min-w-[400px] max-[500px]:rounded-[36px] rounded-s-[36px] rounded-t-[36px]"
-              src={tabiat}
+              src={tabiat} alt="Tabiat"
             />
             <img
               className="absolute bottom-0 left-0 right-0 z-20"
-              src={bgImg}
+              src={bgImg} alt=""
             />
             <div className="absolute bottom-0 right-0 w-[140px] lg:w-[190px] h-[140px] lg:h-[190px] rounded-tl-[36px] border-t-4 lg:border-t-8 border-l-4 lg:border-l-8 border-white bg-[#79B952] py-3 lg:py-6 pl-3 lg:pl-5 text-white text-center max-md:hidden">
               <p className="text-base lg:text-lg italic">"bios" - </p>

@@ -5,7 +5,7 @@ import "./home.css";
 export default function Hero() {
   return (
     <div className="bg-[#79B952] relative">
-      <img className="absolute top-14" src={bg} width={350} />
+      <img className="absolute top-14" src={bg} alt="" width={350} />
       <div className="container flex items-center py-6 lg:py-8 max-[550px]:text-center">
         <div className="max-[550px]:basis-full basis-2/3 sm:basis-1/2">
           <h1 className="mb-4 md:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-8 sm:leading-10 lg:leading-[64px] text-[#ffffff]">
