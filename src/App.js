@@ -7,7 +7,6 @@ import GamesPage from "./pages/GamesPage";
 import TwinPage from "./pages/TwinPage";
 import WordsPage from "./pages/WordsPage";
 import AboutPage from "./pages/AboutPage";
-import AuthorsPage from "./pages/AuthorsPage";
 function App() {
   const basename = document.querySelector("base")?.getAttribute("href") ?? "/";
   return (
@@ -21,7 +20,6 @@ function App() {
           <Route path="/twin" element={<TwinPage />} />
           <Route path="/words" element={<WordsPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/authors" element={<AuthorsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />

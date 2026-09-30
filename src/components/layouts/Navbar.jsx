@@ -41,16 +41,6 @@ export default function Navbar() {
           >
             Darslik haqida
           </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "text-[#96BB7C] border-b-2 border-b-[#96BB7C] py-2"
-                : "hover:text-[#252B42] border-b-2 border-b-transparent hover:border-b-2 hover:border-b-[#96BB7C] py-2"
-            }
-            to="/authors"
-          >
-            Mualliflar
-          </NavLink>
         </div>
       </div>
     </div>
