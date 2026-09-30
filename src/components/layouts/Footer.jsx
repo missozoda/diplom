@@ -46,16 +46,6 @@ export default function Footer() {
           >
             Darslik haqida
           </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "text-gray-900 border-b-2 border-b-gray-900 py-2"
-                : "hover:text-[#252B42] border-b-2 border-b-transparent hover:border-b-2 hover:border-b-[#252B42] py-2"
-            }
-            to="/authors"
-          >
-            Mualliflar
-          </NavLink>
         </div>
         <p className="text-white font-normal sm:font-medium text-center text-sm sm:text-base lg:text-lg">
           Copyright &copy; 2024 Biologiya
