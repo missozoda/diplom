@@ -4,7 +4,7 @@ import logo from "../../assets/logo.png";
 export default function Footer() {
   return (
     <div className="bg-[#79B952] relative">
-      <img className="absolute left-0 bottom-0" src={footerBg} width={300} />
+      <img className="absolute left-0 bottom-0" src={footerBg} alt="" width={300} />
       <div className="conatiner py-6">
         <NavLink
           to="/"

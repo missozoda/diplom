@@ -10,7 +10,7 @@ export default function GamesPage() {
             Rasmlarda qushlarni va ayna shu qushning tuxumini topish o'yini.
           </h4>
           <NavLink to={"/twin"}>
-            <img src={twin} />
+            <img src={twin} alt="Qush va tuxumini topish o'yini" />
           </NavLink>
         </div>
         <div>
@@ -18,7 +18,7 @@ export default function GamesPage() {
             Berilgan tarifga mos keladigan so'zni topish o'yini.
           </h4>
           <NavLink to={"/words"}>
-            <img src={words} />
+            <img src={words} alt="So'z topish o'yini" />
           </NavLink>
         </div>
       </div>

@@ -21,90 +21,90 @@ export default function Carousel() {
           uning har bir sahifasi chuqur mazmunga to’la.
         </h3>
       </div>
-      <img className="absolute right-0 -top-20" src={bgBottom} width={350} />
+      <img className="absolute right-0 -top-20" src={bgBottom} alt="" width={350} />
       <div className="carousel overflow-hidden">
         <div className="carousel-inner w-full flex gap-3 lg:gap-4 xl:gap-5 mb-3 lg:mb-4 xl:mb-5">
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slide1}
+            src={slide1} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slide2}
+            src={slide2} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slide3}
+            src={slide3} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slide4}
+            src={slide4} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slide5}
+            src={slide5} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slide6}
+            src={slide6} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slide1}
+            src={slide1} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slide2}
+            src={slide2} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slide3}
+            src={slide3} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slide4}
+            src={slide4} alt=""
           />
         </div>
         <div className="carousel-inner reverse w-full flex gap-3 lg:gap-4 xl:gap-5">
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slideb1}
+            src={slideb1} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slideb2}
+            src={slideb2} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slideb3}
+            src={slideb3} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slideb4}
+            src={slideb4} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slideb5}
+            src={slideb5} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slideb6}
+            src={slideb6} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slideb1}
+            src={slideb1} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slideb2}
+            src={slideb2} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slideb3}
+            src={slideb3} alt=""
           />
           <img
             className="h-[150px] sm:h-[200px] lg:h-[300px] w-auto"
-            src={slideb4}
+            src={slideb4} alt=""
           />
         </div>
       </div>
